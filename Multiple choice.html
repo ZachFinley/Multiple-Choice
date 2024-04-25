@@ -17,17 +17,19 @@
         let questions = [];
         let currentIndex = 0;
         let correctAnswers = 0;
-
+		function loadQuestions() {
+			displayQuestion(); // Call the existing function to display the first question
+			}
         function displayQuestion() {
             if (currentIndex >= questions.length) {
                 alert(`Quiz completed! You answered ${correctAnswers} out of ${questions.length} questions correctly.`);
-                currentIndex = 0; // Reset quiz
-                correctAnswers = 0; // Reset correct answers count
+                currentIndex = 0; 
+                correctAnswers = 0; 
                 return;
             }
 
             const quizContainer = document.getElementById('quiz-container');
-            quizContainer.innerHTML = ''; // Clear previous question
+            quizContainer.innerHTML = ''; 
 
             const questionObj = questions[currentIndex];
             const questionElem = document.createElement('div');
@@ -65,7 +67,7 @@
                 alert(`Wrong answer! The correct answer is ${questions[currentIndex].answer}`);
             }
             currentIndex++;
-            displayQuestion(); // Move to the next question
+            displayQuestion();
         }
 
         document.getElementById('check-button').addEventListener('click', checkAnswer);
@@ -79,7 +81,7 @@
           "C": "Bureau of Economic Analysis",
           "D": "Federal Reserve Board of Governors"
       },
-      "answer": ""
+      "answer": "A"
   },
   {
       "questionNumber": 2,
@@ -1176,7 +1178,7 @@
   }
 ]
 
-        window.onload = loadQuestions; // Start by loading questions
+        window.onload = loadQuestions; 
     </script>
 </body>
 </html>
