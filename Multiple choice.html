@@ -18,8 +18,6 @@
         let currentIndex = 0;
         let correctAnswers = 0;
 
-        // Load questions from the JSON file
-
         function displayQuestion() {
             if (currentIndex >= questions.length) {
                 alert(`Quiz completed! You answered ${correctAnswers} out of ${questions.length} questions correctly.`);
@@ -73,87 +71,106 @@
         document.getElementById('check-button').addEventListener('click', checkAnswer);
         questions = [
   {
+      "questionNumber": 1,
       "question": "The group of three economists appointed by the President to provide fiscal policy recommendations is the:",
       "options": {
           "A": "Council of Economic Advisers",
           "B": "Joint Economic Committee",
           "C": "Bureau of Economic Analysis",
           "D": "Federal Reserve Board of Governors"
-      }
+      },
+      "answer": ""
   },
   {
+      "questionNumber": 2,
       "question": "Discretionary fiscal policy refers to:",
       "options": {
           "A": "any change in government spending or taxes that destabilizes the economy",
           "B": "the authority that the President has to change personal income tax rates",
           "C": "intentional changes in taxes and government expenditures made by Congress to stabilize the economy",
           "D": "the changes in taxes and transfers that occur as GDP changes"
-      }
+      },
+      "answer": ""
   },
   {
+    "questionNumber": 3,
       "question": "Fiscal policy refers to the:",
       "options": {
           "A": "manipulation of government spending and taxes to stabilize domestic output, employment, and the price level",
           "B": "manipulation of government spending and taxes to achieve greater equality in the distribution of income",
           "C": "altering of the interest rate to change aggregate demand",
           "D": "fact that equal increases in government spending and taxation will be contractionary"
-      }
+      },
+      "answer": ""
   },
   {
+    "questionNumber": 4,
       "question": "Contractionary fiscal policy is so named because it:",
       "options": {
           "A": "involves a contraction of the nation's money supply",
           "B": "necessarily reduces the size of government",
           "C": "is aimed at reducing aggregate demand and thus achieving price stability",
           "D": "is expressly designed to expand real GDP"
-      }
+      },
+      "answer": ""
   },
   {
+    "questionNumber": 5,
       "question": "An economist who favors smaller government would recommend:",
       "options": {
           "A": "tax cuts during recession and reductions in government spending during inflation",
           "B": "tax increases during recession and tax cuts during inflation",
           "C": "tax cuts during recession and tax increases during inflation",
           "D": "increases in government spending during recession and tax increases during inflation"
-      }
+      },
+      "answer": ""
   },
   {
+      "questionNumber": 6,
       "question": "An economist who favored expanded government would recommend:",
       "options": {
           "A": "tax cuts during recession and reductions in government spending during inflation",
           "B": "tax increases during recession and tax cuts during inflation",
           "C": "tax cuts during recession and tax increases during inflation",
           "D": "increases in government spending during recession and tax increases during inflation"
-      }
+      },
+      "answer": ""
   },
   {
+      "questionNumber": 7,
       "question": "If the MPC in an economy is .75, government could shift the aggregate demand curve leftward by $60 billion by:",
       "options": {
           "A": "reducing government expenditures by $12 billion",
           "B": "reducing government expenditures by $60 billion",
           "C": "increasing taxes by $15 billion",
           "D": "increasing taxes by $20 billion"
-      }
+      },
+      "answer": ""
   },
   {
+      "questionNumber": 8,
       "question": "Suppose that the economy is in the midst of a recession. Which of the following policies would most likely end the recession and stimulate output growth?",
       "options": {
           "A": "A Congressional proposal to incur a Federal surplus to be used for the retirement of public debt",
           "B": "Reductions in agricultural subsidies and veterans' benefits",
           "C": "Postponement of a highway construction program",
           "D": "Reductions in Federal tax rates on personal and corporate income"
-      }
+      },
+      "answer": ""
   },
   {
+      "questionNumber": 9,
       "question": "A contractionary fiscal policy is shown as a:",
       "options": {
           "A": "rightward shift in the economy's aggregate demand curve",
           "B": "rightward shift in the economy's aggregate supply curve",
           "C": "movement along an existing aggregate demand curve",
           "D": "leftward shift in the economy's aggregate demand curve"
-      }
+      },
+      "answer": ""
   },
   {
+     "questionNumber": 10,
       "question": "Refer to the above diagram. If the full-employment level of GDP is D, then it would be appropriate fiscal policy for government to:",
       "options": {
           "A": "decrease spending and increase taxes",
@@ -163,6 +180,7 @@
       }
   },
   {
+      "questionNumber": 11,
       "question": "Built-in stability means that:",
       "options": {
           "A": "an annually balanced budget will offset the procyclical tendencies created by state and local finance and thereby stabilize the economy",
@@ -172,6 +190,7 @@
       }
   },
   {
+      "questionNumber": 12,
       "question": "The cyclically-adjusted budget refers to:",
       "options": {
           "A": "the inflationary impact that the automatic stabilizers have in a full-employment economy",
@@ -181,6 +200,7 @@
       }
   },
   {
+	"questionNumber": 13,
       "question": "Economists refer to a budget deficit that exists when the economy is achieving full employment as a:",
       "options": {
           "A": "cyclical deficit",
@@ -190,6 +210,7 @@
       }
   },
   {
+	"questionNumber": 14,
       "question": "The amount by which Federal tax revenues exceed Federal government expenditures during a particular year is the:",
       "options": {
           "A": "Federal reserve",
@@ -199,6 +220,7 @@
       }
   },
   {
+	"questionNumber": 15,
       "question": "The political business cycle refers to the possibility that:",
       "options": {
           "A": "incumbent politicians will be reelected regardless of the state of the economy",
@@ -208,6 +230,7 @@
       }
   },
   {
+	"questionNumber": 16,
       "question": "The crowding-out effect of expansionary fiscal policy suggests that:",
       "options": {
           "A": "government spending increases at the expense of private investment",
@@ -217,6 +240,7 @@
       }
   },
   {
+	"questionNumber": 17,
       "question": "Which of the following fiscal policy actions is most likely to increase aggregate supply?",
       "options": {
           "A": "An increase in personal income tax rates",
@@ -226,6 +250,7 @@
       }
   },
   {
+	"questionNumber": 18,
       "question": "The U.S. public debt:",
       "options": {
           "A": "refers to the debts of all units of government—Federal, state, and local",
@@ -235,6 +260,7 @@
       }
   },
   {
+	"questionNumber": 19,
       "question": "Refer to the above diagram in which T is tax revenues and G is government expenditures. All figures are in billions. If GDP is $400:",
       "options": {
           "A": "there will be a budget deficit",
@@ -244,6 +270,7 @@
       }
   },
   {
+	"questionNumber": 20,
       "question": "Which of the following is the best example of public investment?",
       "options": {
           "A": "salaries of Senators and Representatives",
@@ -255,6 +282,7 @@
 
 
   {
+	"questionNumber": 21,
       "question": "Money functions as:",
       "options": {
           "A": "a store of value",
@@ -264,6 +292,7 @@
       }
   },
   {
+	"questionNumber": 22,
       "question": "If you place a part of your summer earnings in a savings account, you are using money primarily as a:",
       "options": {
           "A": "medium of exchange",
@@ -273,6 +302,7 @@
       }
   },
   {
+	"questionNumber": 23,
       "question": "The paper money used in the United States is:",
       "options": {
           "A": "National Bank Notes",
@@ -282,6 +312,7 @@
       }
   },
   {
+	"questionNumber": 24,
       "question": "In the United States, the money supply (M1) is comprised of:",
       "options": {
           "A": "coins, paper currency, and checkable deposits",
@@ -291,6 +322,7 @@
       }
   },
   {
+	"questionNumber": 25,
       "question": "Currency held in the vault of First National Bank is:",
       "options": {
           "A": "counted as part of M1",
@@ -300,6 +332,7 @@
       }
   },
   {
+	"questionNumber": 26,
       "question": "Checkable deposits are classified as money because:",
       "options": {
           "A": "they can be readily used in purchasing goods and paying debts",
@@ -309,6 +342,7 @@
       }
   },
   {
+	"questionNumber": 27,
       "question": "Paper money (currency) in the United States is issued by the:",
       "options": {
           "A": "United States Mint",
@@ -318,6 +352,7 @@
       }
   },
   {
+	"questionNumber": 28,
       "question": "The difference between M1 and M2 is that:",
       "options": {
           "A": "the former includes time deposits",
@@ -327,6 +362,7 @@
       }
   },
   {
+	"questionNumber": 29,
       "question": "Refer to the above information. Money supply M2 for this economy is:",
       "options": {
           "A": "$480",
@@ -336,6 +372,7 @@
       }
   },
   {
+	"questionNumber": 30,
       "question": "Refer to the above list. Which of the following are considered to be \"near-monies\"?",
       "options": {
           "A": "items 2, 5, 8, and 9",
@@ -345,6 +382,7 @@
       }
   },
   {
+	"questionNumber": 31,
       "question": "The money supply is backed:",
       "options": {
           "A": "by the government's ability to control the supply of money and therefore to keep its value relatively stable",
@@ -354,6 +392,7 @@
       }
   },
   {
+	"questionNumber": 32,
       "question": "The value of money varies:",
       "options": {
           "A": "inversely with the price level",
@@ -363,6 +402,7 @@
       }
   },
   {
+	"questionNumber": 33,
       "question": "The basic policy-making body in the U.S. banking system is the:",
       "options": {
           "A": "Federal Open Market Committee (FOMC)",
@@ -372,6 +412,7 @@
       }
   },
   {
+	"questionNumber": 34,
       "question": "In the U.S. economy the money supply is controlled by the:",
       "options": {
           "A": "U.S. Treasury",
@@ -381,6 +422,7 @@
       }
   },
   {
+	"questionNumber": 35,
       "question": "The group that sets the Federal Reserve Systems policy on buying and selling government securities (bills, notes, and bonds) is the:",
       "options": {
           "A": "Federal Deposit Insurance Corporation (FDIC)",
@@ -390,6 +432,7 @@
       }
   },
   {
+	"questionNumber": 36,
       "question": "The members of the Federal Reserve Board:",
       "options": {
           "A": "serve seven-year terms",
@@ -399,6 +442,7 @@
       }
   },
   {
+	"questionNumber": 37,
       "question": "Which of the following statements best describes the twelve Federal Reserve Banks?",
       "options": {
           "A": "They are privately owned and privately controlled central banks whose basic goal is to provide an ample and orderly market for U.S. Treasury securities",
@@ -408,6 +452,7 @@
       }
   },
   {
+	"questionNumber": 38,
       "question": "To say that the Federal Reserve Banks are quasi-public banks means that:",
       "options": {
           "A": "they are privately owned, but managed in the public interest",
@@ -417,6 +462,7 @@
       }
   },
   {
+	"questionNumber": 39,
       "question": "\"Subprime mortgage loans\" refer to:",
       "options": {
           "A": "high-interest rate loans to home buyers with above average credit risk",
@@ -426,6 +472,7 @@
       }
   },
   {
+	"questionNumber": 40,
       "question": "Banks lost money during the mortgage default crisis because:",
       "options": {
           "A": "of defaulted loans to investors in mortgage-backed securities",
@@ -437,6 +484,7 @@
 
   
   {
+	"questionNumber": 41,
       "question": "TARP, created in 2008, stands for:",
       "options": {
           "A": "Toxic Asset Relief Program",
@@ -446,6 +494,7 @@
       }
   },
   {
+	"questionNumber": 42,
       "question": "Most modern banking systems are based on:",
       "options": {
           "A": "money of intrinsic value",
@@ -455,6 +504,7 @@
       }
   },
   {
+	"questionNumber": 43,
       "question": "A bank that has liabilities of $150 billion and a net worth of $20 billion must have:",
       "options": {
           "A": "excess reserves of $130 billion",
@@ -464,6 +514,7 @@
       }
   },
   {
+	"questionNumber": 44,
       "question": "The primary purpose of the legal reserve requirement is to:",
       "options": {
           "A": "prevent banks from hoarding too much vault cash",
@@ -473,6 +524,7 @@
       }
   },
   {
+	"questionNumber": 45,
       "question": "Excess reserves refer to the:",
       "options": {
           "A": "difference between a bank's vault cash and its reserves deposited at the Federal Reserve Bank",
@@ -482,6 +534,7 @@
       }
   },
   {
+	"questionNumber": 46,
       "question": "Assume that a bank initially has no excess reserves. If it receives $5,000 in cash from a depositor and the bank finds that it can safely lend out $4,500, the reserve requirement must be:",
       "options": {
           "A": "zero",
@@ -491,6 +544,7 @@
       }
   },
   {
+	"questionNumber": 47,
       "question": "Commercial banks create money when they:",
       "options": {
           "A": "accept cash deposits from the public",
@@ -500,6 +554,7 @@
       }
   },
   {
+	"questionNumber": 48,
       "question": "Which of the following is correct?",
       "options": {
           "A": "Both the granting and repaying of bank loans expand the aggregate money supply",
@@ -509,6 +564,7 @@
       }
   },
   {
+	"questionNumber": 49,
       "question": "The Federal funds market is the market in which:",
       "options": {
           "A": "banks borrow from the Federal Reserve Banks",
@@ -518,6 +574,7 @@
       }
   },
   {
+	"questionNumber": 50,
       "question": "If m equals the maximum number of new dollars that can be created for a single dollar of excess reserves and R equals the required reserve ratio, then for the banking system:",
       "options": {
           "A": "m = R - 1",
@@ -527,6 +584,7 @@
       }
   },
   {
+	"questionNumber": 51,
       "question": "The asset demand for money:",
       "options": {
           "A": "is unrelated to both the interest rate and the level of GDP",
@@ -536,6 +594,7 @@
       }
   },
   {
+	"questionNumber": 52,
       "question": "Refer to the above diagram of the market for money. The downward slope of the money demand curve Dm is best explained in terms of the:",
       "options": {
           "A": "transactions demand for money",
@@ -545,6 +604,7 @@
       }
   },
   {
+	"questionNumber": 53,
       "question": "Refer to the above diagram of the market for money. The vertical money supply curve Sm reflects the fact that:",
       "options": {
           "A": "bond prices and interest rates are inversely related",
@@ -554,6 +614,7 @@
       }
   },
   {
+	"questionNumber": 54,
       "question": "Which of the following statements is correct?",
       "options": {
           "A": "Interest rates and bond prices vary directly",
@@ -563,6 +624,7 @@
       }
   },
   {
+	"questionNumber": 55,
       "question": "Refer to the above market for money diagrams. Curve D1 represents the:",
       "options": {
           "A": "total demand for money",
@@ -572,6 +634,7 @@
       }
   },
   {
+	"questionNumber": 56,
       "question": "The Federal Reserve Banks sell government securities to the public. As a result, the checkable deposits:",
       "options": {
           "A": "of commercial banks are unchanged, but their reserves increase",
@@ -581,6 +644,7 @@
       }
   },
   {
+	"questionNumber": 57,
       "question": "Which of the following is a tool of monetary policy?",
       "options": {
           "A": "open market operations",
@@ -590,6 +654,7 @@
       }
   },
   {
+	"questionNumber": 58,
       "question": "In the United States monetary policy is the responsibility of the:",
       "options": {
           "A": "U.S. Treasury",
@@ -599,6 +664,7 @@
       }
   },
   {
+	"questionNumber": 59,
       "question": "The purchase of government securities from the public by the Fed will cause:",
       "options": {
           "A": "commercial bank reserves to decrease",
@@ -608,6 +674,7 @@
       }
   },
   {
+	"questionNumber": 60,
       "question": "Which of the following is correct? When the Federal Reserve buys government securities from the public, the money supply:",
       "options": {
           "A": "contracts and commercial bank reserves increase",
@@ -617,6 +684,7 @@
       }
   },
   {
+	"questionNumber": 61,
       "question": "An increase in the legal reserve ratio:",
       "options": {
           "A": "increases the money supply by increasing excess reserves and increasing the monetary multiplier",
@@ -626,6 +694,7 @@
       }
   },
   {
+	"questionNumber": 62,
       "question": "Projecting that it might temporarily fall short of legally required reserves in the coming days, the Bank of Beano decides to borrow money from its regional Federal Reserve Bank. The interest rate on the loan is called the:",
       "options": {
           "A": "prime rate",
@@ -635,6 +704,7 @@
       }
   },
   {
+	"questionNumber": 63,
       "question": "The interest rate that banks charge one another on overnight loans is called the:",
       "options": {
           "A": "discount rate",
@@ -644,6 +714,7 @@
       }
   },
   {
+	"questionNumber": 64,
       "question": "Which of the following statements is true?",
       "options": {
           "A": "The Federal Reserve sets the Federal funds rate",
@@ -653,6 +724,7 @@
       }
   },
   {
+	"questionNumber": 65,
       "question": "The prime interest rate:",
       "options": {
           "A": "affects investment spending while the Federal funds rate affects consumption spending",
@@ -662,6 +734,7 @@
       }
   },
   {
+	"questionNumber": 66,
       "question": "According to the Taylor rule:",
       "options": {
           "A": "for every 1 percentage point that unemployment exceeds the natural rate of unemployment, there is a 2 percentage point gap between potential and actual GDP",
@@ -671,6 +744,7 @@
       }
   },
   {
+	"questionNumber": 67,
       "question": "Which of the following actions by the Fed would cause the money supply to increase?",
       "options": {
           "A": "Purchases of government bonds from banks",
@@ -680,6 +754,7 @@
       }
   },
   {
+	"questionNumber": 68,
       "question": "Refer to the above diagrams. The numbers in parentheses after the AD1, AD2, and AD3 labels indicate the levels of investment spending associated with each curve. All figures are in billions. If aggregate demand is AD3 and the monetary authorities desire to reduce it to AD2, they should:",
       "options": {
           "A": "increase the interest rate from 3 percent to 9 percent",
@@ -689,6 +764,7 @@
       }
   },
   {
+	"questionNumber": 69,
       "question": "Which of the following is least likely to be a problem for monetary policy?",
       "options": {
           "A": "The recognition lag",
@@ -698,6 +774,7 @@
       }
   },
   {
+	"questionNumber": 70,
       "question": "The problem of cyclical asymmetry refers to the idea that:",
       "options": {
           "A": "a restrictive monetary policy can force a contraction of the money supply, but an expansionary monetary policy may not achieve an increase in the money supply",
@@ -707,6 +784,7 @@
       }
   },
   {
+	"questionNumber": 71,
       "question": "On the basis of the above information:",
       "options": {
           "A": "Gamma should export both tea and pots to Sigma",
@@ -716,6 +794,7 @@
       }
   },
   {
+	"questionNumber": 72,
       "question": "Refer to the above data. What are the limits of the terms of trade between Gamma and Sigma?",
       "options": {
           "A": "1 tea = 2 pots to 1 tea = 6 pots",
@@ -725,6 +804,7 @@
       }
   },
   {
+	"questionNumber": 73,
       "question": "The terms of trade reflect the:",
       "options": {
           "A": "rate at which gold exchanges internationally for any domestic currency",
@@ -734,6 +814,7 @@
       }
   },
   {
+	"questionNumber": 74,
       "question": "Refer to the above graphs. Stanville has a comparative advantage in producing:",
       "options": {
           "A": "product A",
@@ -743,6 +824,7 @@
       }
   },
   {
+	"questionNumber": 75,
       "question": "Refer to the above diagram pertaining to two nations and a specific product. Lines FA and GB are:",
       "options": {
           "A": "domestic supply curves for two countries",
@@ -752,6 +834,7 @@
       }
   },
   {
+	"questionNumber": 76,
       "question": "Country A limits other nation's exports to Country A to 1,000 tons of coal annually. This is an example of a(n):",
       "options": {
           "A": "protective tariff",
@@ -761,6 +844,7 @@
       }
   },
   {
+	"questionNumber": 77,
       "question": "Refer to the above diagram, where Sd and Dd are the domestic supply and demand for a product and Pc is the world price of that product. If this economy was entirely closed to international trade, equilibrium price and quantity would be:",
       "options": {
           "A": "Pa and z",
@@ -770,6 +854,7 @@
       }
   },
   {
+	"questionNumber": 78,
       "question": "Refer to the above diagram, where Sd and Dd are the domestic supply and demand for a product and Pc is the world price of that product. If the economy is opened to free trade, the price and quantity sold of this product would be:",
       "options": {
           "A": "Pc and v",
@@ -779,6 +864,7 @@
       }
   },
   {
+	"questionNumber": 79,
       "question": "A protective tariff will:",
       "options": {
           "A": "increase the sales of foreign exporters",
@@ -788,6 +874,7 @@
       }
   },
   {
+	"questionNumber": 80,
       "question": "Refer to the above diagram, where Sd and Dd are the domestic supply and demand for a product and Pc is the world price of that product. Sd + Q is the product supply curve after an import quota is imposed. The size of the import quota:",
       "options": {
           "A": "is vz",
@@ -798,6 +885,7 @@
   },
 
   {
+	"questionNumber": 81,
       "question": "Refer to the above diagram, where Sd and Dd are the domestic supply and demand for a product and Pc is the world price of that product. Sd + Q is the product supply curve after an import quota is imposed. A tariff of Pc Pt or an import quota of wy will have the same effect on:",
       "options": {
           "A": "the volume of imports",
@@ -807,6 +895,7 @@
       }
   },
   {
+	"questionNumber": 82,
       "question": "The increased-domestic-employment argument for tariff protection holds that:",
       "options": {
           "A": "domestic inflation is a desirable policy goal because it stimulates exports",
@@ -816,6 +905,7 @@
       }
   },
   {
+	"questionNumber": 83,
       "question": "Which of the following arguments contends that certain industries need to be protected in the interest of national security?",
       "options": {
           "A": "the increase-domestic-employment argument",
@@ -825,6 +915,7 @@
       }
   },
   {
+	"questionNumber": 84,
       "question": "The World Trade Organization:",
       "options": {
           "A": "is also known as the International Monetary Fund (IMF)",
@@ -834,6 +925,7 @@
       }
   },
   {
+	"questionNumber": 85,
       "question": "\"International trade\" refers to:",
       "options": {
           "A": "purchasing or selling currently produced goods or services across an international border",
@@ -842,7 +934,8 @@
           "D": "buying or selling of preexisting assets across an international border"
       }
   },
-  {
+  { 
+	"questionNumber": 86,
       "question": "If a U.S. importer can purchase 10,000 British pounds for $20,000, the rate of exchange is:",
       "options": {
           "A": "$1 = 2 British pounds in the United States",
@@ -852,6 +945,7 @@
       }
   },
   {
+	"questionNumber": 87,
       "question": "Refer to the above data. The United States has a balance of goods:",
       "options": {
           "A": "deficit of $10 billion",
@@ -861,6 +955,7 @@
       }
   },
   {
+	"questionNumber": 88,
       "question": "Refer to the above data. The U.S. balance on goods and services is a:",
       "options": {
           "A": "$10 billion deficit",
@@ -870,6 +965,7 @@
       }
   },
   {
+	"questionNumber": 89,
       "question": "Refer to the above data. The U.S. balance on current account is a:",
       "options": {
           "A": "$40 billion surplus",
@@ -879,6 +975,7 @@
       }
   },
   {
+	"questionNumber": 90,
       "question": "A market in which the money of one nation is exchanged for the money of another nation is a:",
       "options": {
           "A": "resource market",
@@ -888,6 +985,7 @@
       }
   },
   {
+	"questionNumber": 91,
       "question": "The following are hypothetical exchange rates: 2 euros = 1 pound; $1 = 2 pounds. We can conclude that:",
       "options": {
           "A": "$1 = 4 euros",
@@ -897,6 +995,7 @@
       }
   },
   {
+	"questionNumber": 92,
       "question": "Depreciation of the dollar will:",
       "options": {
           "A": "decrease the prices of both U.S. imports and exports",
@@ -906,6 +1005,7 @@
       }
   },
   {
+	"questionNumber": 93,
       "question": "Appreciation of the Canadian dollar will:",
       "options": {
           "A": "intensify an existing disequilibrium in Canada's balance of payments",
@@ -915,6 +1015,7 @@
       }
   },
   {
+	"questionNumber": 94,
       "question": "The U.S. demand for British pounds is:",
       "options": {
           "A": "downsloping because a higher dollar price of pounds means British goods are cheaper to Americans",
@@ -924,6 +1025,7 @@
       }
   },
   {
+	"questionNumber": 95,
       "question": "Refer to the above diagram. Other things equal, a rightward shift of the demand curve would:",
       "options": {
           "A": "depreciate the dollar",
@@ -933,6 +1035,7 @@
       }
   },
   {
+	"questionNumber": 96,
       "question": "The idea that freely floating exchange rates equate the buying power of national currencies is called:",
       "options": {
           "A": "the equation of exchange",
@@ -942,6 +1045,7 @@
       }
   },
   {
+	"questionNumber": 97,
       "question": "The exchange rate system currently used by the industrially advanced nations is:",
       "options": {
           "A": "the gold standard",
@@ -951,6 +1055,7 @@
       }
   },
   {
+	"questionNumber": 98,
       "question": "The basis for the Bretton Woods international monetary system was:",
       "options": {
           "A": "a completely fixed system of exchange rates",
@@ -960,6 +1065,7 @@
       }
   },
   {
+	"questionNumber": 99,
       "question": "Which of the following is not a condition of the international gold standard?",
       "options": {
           "A": "A nation must be willing to accept very wide fluctuations in its exchange rate",
@@ -969,6 +1075,7 @@
       }
   },
   {
+	"questionNumber": 100,
       "question": "The large trade deficit that the U.S. has with China persists in part because:",
       "options": {
           "A": "the U.S. economy has grown slowly in recent years",
